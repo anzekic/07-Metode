@@ -14,14 +14,19 @@ namespace Vsite.CSharp
 
     class Izvedena : Bazna
     {
-        // TODO: pregaziti virtualnu metodu PredstaviSe tako da ispiše ime klase
+        public override void PredstaviSe()
+        {
+            Console.WriteLine("Ja sam Izvedena");
+        }
 
     }
 
     class Izvedena2 : Bazna
     {
-        // TODO: pregaziti virtualnu metodu PredstaviSe tako da ispiše ime klase
-
+        public override void PredstaviSe()
+        {
+            Console.WriteLine("Ja sam Izvedena2");
+        }
     }
 
     class Program
