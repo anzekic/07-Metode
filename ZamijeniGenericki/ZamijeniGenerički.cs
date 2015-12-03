@@ -8,7 +8,7 @@ namespace Vsite.CSharp
     class Program
     {
         // Primjer kako prevoditelj automatski generira različite metode za različite tipove parametara
-        static void ZamijeniGenerički<T>(T o1, T o2)
+        static void ZamijeniGenerički<T>(ref T o1, ref T o2)
         {
             T temp = o2;
             o2 = o1;
@@ -22,13 +22,13 @@ namespace Vsite.CSharp
 
             int i1 = 5;
             int i2 = 10;
-            ZamijeniGenerički(i1, i2);
+            ZamijeniGenerički(ref i1, ref i2);
 
             double d1 = 3.14;
             double d2 = 2.76;
-            ZamijeniGenerički(d1, d2);
+            ZamijeniGenerički(ref d1, ref d2);
 
-            ZamijeniGenerički("mirko", "slavko");
+            //ZamijeniGenerički("mirko", "slavko");
 
         }
     }
