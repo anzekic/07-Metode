@@ -3,7 +3,13 @@
 namespace Vsite.CSharp
 {
     // TODO: dodati proširujuću metodu (extension method) BrojRiječi klasi string koja kao rezultat vraća broj riječi
-
+    static class ProširenjeStringa
+    {
+        public static int BrojRiječi(this string s) 
+        { 
+            return s.Split(new char [] {' ','?',',','.'}, StringSplitOptions.RemoveEmptyEntries).Length;
+        }
+    }
 
     class Program
     {
