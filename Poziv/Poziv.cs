@@ -5,7 +5,7 @@ namespace Vsite.CSharp
     // ilustracija kako se razlučuje metoda koja će biti pozvana
     class MojaKlasa
     {
-        void Metoda1()
+        public void Metoda1()
         {
             Console.WriteLine("Metoda1()");
         }
@@ -22,7 +22,8 @@ namespace Vsite.CSharp
         {
             MojaKlasa mk = new MojaKlasa();
             // TODO: Napisati poziv člana Metoda1 i člana Metoda2 s proslijeđenim cijelim brojem te izvesti program 
-
+            mk.Metoda1();
+            mk.Metoda2(2);
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
