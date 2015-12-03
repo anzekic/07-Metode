@@ -6,9 +6,7 @@ namespace Vsite.CSharp
 
     class RefParametar
     {
-        // TODO: Dodati modifikator tako da se argument x metodi prenosi po referenci
-
-        static void DodajDeset(int x)
+        static void DodajDeset(ref int x)
         {
             x += 10;
             Console.WriteLine("Unutar metode DodajDeset: {0}", x);
@@ -19,8 +17,7 @@ namespace Vsite.CSharp
             int n = 5;
             Console.WriteLine("Prije metode DodajDeset: {0}", n);
 
-            // TODO: Napisati poziv metode DodajDeset, pokrenuti program i ispis prekopirati u datoteku RefParametar.txt 
-
+            DodajDeset(ref n);
 
             Console.WriteLine("Nakon metode DodajDeset: {0}", n);
 
