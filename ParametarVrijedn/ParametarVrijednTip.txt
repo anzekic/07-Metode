@@ -1,1 +1,3 @@
-﻿
+﻿Prije metode Uvećaj: 5
+U metodi Uvećaj: 6
+Poslije metode Uvećaj: 5
