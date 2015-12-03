@@ -4,15 +4,16 @@ namespace Vsite.CSharp
 {
     class Program
     {
-        // TODO: Pokrenut program i kopirati ispis u datoteku PreopterecenjePodrazumijevaniArg.txt priloženu projektu
 
         public static int Zbroji(int x = 3, int y = 4) 
         {
             return x + y;
         }
 
-        // TODO: Dodati definiciju funkcije public static int Zbroji(int x) i ponoviti pokretanje programa te usporediti ispise
-
+        static int Zbroji(int x)
+        {
+            return x + 1;
+        }
         
         
         static void Main(string[] args)
