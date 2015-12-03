@@ -24,8 +24,6 @@ namespace Vsite.CSharp
 
         static void Main(string[] args)
         {
-            // TODO: Pokrenuti program, ispis prekopirati u datoteku ParametarStruktura.txt te u njoj dopisati obrazloženje rezultata
-
             MojaStruktura ms = new MojaStruktura(20);
             Console.WriteLine("Prije metode Uvecaj: {0}", ms.N);
             Uvećaj(ms);

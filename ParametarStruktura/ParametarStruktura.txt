@@ -1,1 +1,3 @@
-﻿
+﻿Prije metode Uvećaj: 20
+Unutar metode Uvećaj: 21 vrijedi samo unutar metode
+Nakon metode Uvećaj: 20
