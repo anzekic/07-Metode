@@ -19,11 +19,9 @@ namespace Vsite.CSharp
         static void Main(string[] args)
         {
             int x;
-
-            // TODO: Dodati pozive metoda InicijalizirajBrojNaDeset i InicijalizirajBrojNaDvaDeset tako da prevoditelj ne javlja pogrešku
-            // Iza svakog poziva ispisati vrijednost varijable x, pokrenuti program i ispis prekopirati u datoteku OutParametar.txt
-
-
+            InicijalizirajBrojNaDeset(out x);
+            InicijalizirajBrojNaDvaDeset(x);
+            Console.WriteLine(x);
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
